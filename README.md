@@ -10,45 +10,31 @@ pip (Python package manager)
 🔧 Installation Steps
 1. ✅ Clone or Download the Project
 Download the ZIP or clone the repo:
-
-bash
-Copy
-Edit
 git clone <your-repo-url>
 cd mental_health_bot
 2. ✅ Create a Virtual Environment (Recommended)
-bash
-Copy
-Edit
+
 python -m venv venv
 source venv/bin/activate    # On Linux/Mac
 venv\\Scripts\\activate     # On Windows
+
 3. ✅ Install Required Python Packages
 Run this command to install dependencies:
 
-bash
-Copy
-Edit
 pip install flask spacy
 Then download the required Spacy model:
 
-bash
-Copy
-Edit
 python -m spacy download en_core_web_lg
+
+
 🚀 How to Run the Bot
 Once all packages are installed, run the Flask app:
 
-bash
-Copy
-Edit
 python app.py
 Then open your browser and go to:
 
-arduino
-Copy
-Edit
 http://localhost:5000
+
 💬 How It Works
 Type your mental health question or concern.
 
