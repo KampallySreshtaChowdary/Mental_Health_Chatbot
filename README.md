@@ -22,6 +22,7 @@ venv\\Scripts\\activate     # On Windows
 Run this command to install dependencies:
 
 pip install flask spacy
+
 Then download the required Spacy model:
 
 python -m spacy download en_core_web_lg
@@ -31,6 +32,7 @@ python -m spacy download en_core_web_lg
 Once all packages are installed, run the Flask app:
 
 python app.py
+
 Then open your browser and go to:
 
 http://localhost:5000
