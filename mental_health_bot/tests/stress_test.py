@@ -1,8 +1,9 @@
-def run_stress_test(answers):
-    score = sum(answers)
-    if score < 3:
-        return "Your stress level is low. Keep up the good work!"
-    elif score < 6:
-        return "Moderate stress detected. Let's explore coping strategies."
+def interpret_stress_score(score):
+    if score <= 4:
+        return "Low stress level. You're managing things well!"
+    elif score <= 8:
+        return "Moderate stress level. Be mindful and consider relaxing activities."
+    elif score <= 12:
+        return "High stress level. You might benefit from stress-reduction techniques."
     else:
-        return "You seem to be under high stress. Consider reaching out for support."
+        return "Severe stress. Please consider talking to a counselor or professional."

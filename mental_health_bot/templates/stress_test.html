@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stress Assessment</title>
+    <style>
+        body { font-family: Arial; background: #f0f9f9; padding: 20px; }
+        h2 { color: #4da6a6; }
+        form { background: white; padding: 20px; border-radius: 10px; max-width: 600px; margin: auto; }
+        .question { margin-bottom: 20px; }
+        .options label { display: block; margin-bottom: 8px; }
+        button { background-color: #4da6a6; color: white; padding: 10px 20px; border: none; border-radius: 5px; }
+        button:hover { background-color: #397d7d; }
+    </style>
+</head>
+<body>
+    <h2>🌿 Stress Assessment</h2>
+    <form action="/submit/stress-test" method="post">
+    {% for q in questions %}
+        <div class="question">
+            <p><strong>Q{{ loop.index }}. {{ q.text }}</strong></p>
+            <div class="options">
+                {% for option, value in q.options %}
+                    <label>
+                        <input type="radio" name="q{{ q.id }}" value="{{ value }}" required>
+                        {{ option }}
+                    </label>
+                {% endfor %}
+            </div>
+        </div>
+    {% endfor %}
+    <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>

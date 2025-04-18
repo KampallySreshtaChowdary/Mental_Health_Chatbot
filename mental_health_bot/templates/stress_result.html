@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stress Test Result</title>
+    <style>
+        body { font-family: Arial; background: #f4fffa; padding: 20px; text-align: center; }
+        .box { background: white; padding: 30px; border-radius: 10px; display: inline-block; }
+        h2 { color: #4da6a6; }
+        p { font-size: 18px; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>Your Stress Score: {{ score }}</h2>
+        <p>{{ interpretation }}</p>
+        <br>
+        <a href="/test/stress"><button>Retake Test</button></a>
+        <a href="/"><button>Back to Chat</button></a>
+    </div>
+</body>
+</html>
